@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 当input的type值为number时隐藏数字输入框的微调按钮 -->
+    <input type="number" />
+
+    <style>
+      /* 非标准 */
+      /* 谷歌下 */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+
+      /* 火狐下 */
+      input {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </body>
+</html>

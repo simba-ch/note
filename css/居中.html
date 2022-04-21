@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #father {
+        display: table-cell;
+        width: 500px;
+        height: 300px;
+        vertical-align: middle;
+        text-align: center;
+        background-color: skyblue;
+      }
+
+      #son {
+        background-color: green;
+      }
+    </style>
+
+    <div id="father">
+      <span id="son"
+        >我是单行的行内元素Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Adipisci, eligendi magni laborum quis ipsa culpa iusto ex dolorum
+        ab quos natus asperiores temporibus aperiam tempora, nam eaque vitae
+        velit exercitationem!</span
+      >
+    </div>
+  </body>
+</html>
+
+<!-- 设置元素水平居中：
+1.给行级元素设置水平居中，将父级设置成块级或行块级元素，设置父级的text-align：center
+2.为块级元素设置水平居中，定宽，设置左右margin为auto
+3.利用定位
+4.使用弹性盒模型，display：flex -->
+<!-- 
+设置元素垂直居中：
+1.内联单行元素：设置行高为元素高度
+2.多行行内级元素：设置父元素display：table-cell，vertical：middle
+3.块级元素：使用定位或者弹性盒模型 -->
+<!-- 设置元素垂直水平居中
+1. 利用定位或者弹性盒模型-->
+
+<!-- 总结：行内元素设置对齐，不管是水平方向还是垂直方向，要先将其父元素转化为“块级盒模型”，
+块级元素设置对齐一般利用定位（设置父级为display：relative，设置自己为display：absolute调整位置），或者弹性盒模型。 -->
+
+
+<!-- 一个有意思的的定位（麻烦的写法）：已知元素宽高
+设置父级display：relative，
+自己display：absolute
+left：0
+top:0
+right:0
+bottom:0
+margin:auto
+可以实现垂直居中对齐 -->
